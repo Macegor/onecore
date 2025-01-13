@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ошибка - OneCore</title>
+    <style>
+        /* Основные стили страницы */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Заголовок системы */
+        .header {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Контейнер с информацией об ошибке */
+        .error-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Код ошибки */
+        .error-code {
+            font-size: 48px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        /* Описание ошибки */
+        .error-description {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Контейнер для JSON */
+        .json-container {
+            background-color: #2c3e50;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Стили для JSON вывода */
+        pre {
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="header">OneCore</h1>
+        <div class="error-code">{{Контекст.Данные.КодОшибки}}</div>
+        <div class="error-description">{{Контекст.Данные.ОписаниеКодаОшибки}}</div>
+        <div class="json-container">
+            <pre id="jsonOutput">{{Контекст.Данные.ТекстОшибки}}</pre>
+        </div>
+    </div>
+</body>
+</html>
