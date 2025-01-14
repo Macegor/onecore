@@ -2,6 +2,9 @@
 
 <a id="header" />
 
+[![GitHub Release](https://img.shields.io/github/v/release/Macegor/onecore)](https://github.com/Macegor/onecore/releases)
+[![GitHub License](https://img.shields.io/github/license/Macegor/onecore)](https://github.com/Macegor/onecore/blob/main/LICENSE)
+
 OneCore - это web фреймворк на движке onescript, созданный для разработки web-приложений любой сложности, используя компонентный подход.
 
 Проект находится в активной разработке. Фреймворк перешёл на onescript 2.0!!!
